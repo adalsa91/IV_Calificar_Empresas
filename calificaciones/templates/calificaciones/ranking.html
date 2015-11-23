@@ -1,10 +1,10 @@
 <h1>Ranking</h1>
 {% if ranking %}
-    <ul>
+    <ol>
     {% for empresa,puntuacion in ranking.items %}
-        <li>{{ empresa }}: {{ puntuacion }}</li>
+        <li><strong>{{ empresa }}:</strong> {{ puntuacion }}</li>
     {% endfor %}
-    </ul>
+    </ol>
 {% else %}
     <p>No hay empresas.</p>
 {% endif %}
