@@ -1,5 +1,6 @@
 <h1>Empresas</h1>
 {% if empresas %}
+    <h2><a href="ranking">Ranking</a></h2>
     <ul>
     {% for empresa in empresas %}
         <li><a href="/calificaciones/{{ empresa.nombre }}/">{{ empresa.nombre}}</a></li>

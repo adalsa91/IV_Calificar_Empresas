@@ -7,11 +7,11 @@ Página web para calificar las empresas en las que hacen prácticas los alumnos.
 
 #Modelos
     Empresa
-        |-nombre
+        └nombre
     Alumno
-        |-nombre
-        |-empresa
-        |-puntuacion
+        ├nombre
+        ├empresa
+        └puntuacion
 
 #Mapa web
     /admin
