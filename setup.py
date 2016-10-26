@@ -35,7 +35,7 @@ setup(
         'Framework :: Django :: 1.8',
 
     ],
-    install_requires = reqs,
+    install_requires=reqs,
 
     keywords='education companies students practice',
 )

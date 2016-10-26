@@ -31,7 +31,8 @@ def calificaciones_empresa(request, empresa):
         if str(alumno.empresa) == empresa:
             calificaciones[str(alumno.nombre)] = str(alumno.puntuacion)
 
-    return render(request, 'calificaciones/puntuaciones.html', {'puntuaciones': calificaciones, 'empresa': empresa})
+    return render(request, 'calificaciones/puntuaciones.html',
+                  {'puntuaciones': calificaciones, 'empresa': empresa})
 
 
 def alumnos_empresa(request, empresa):
@@ -43,6 +44,7 @@ def alumnos_empresa(request, empresa):
 
 def empresa(request, empresa):
     if Empresa.objects.filter(nombre=empresa).exists():
-        return render(request, 'calificaciones/empresa.html', {'empresa': empresa})
+        return render(request, 'calificaciones/empresa.html',
+                      {'empresa': empresa})
     else:
         return HttpResponse("La empresa solicitada no existe en el sistema.")
