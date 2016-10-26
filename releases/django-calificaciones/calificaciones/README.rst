@@ -16,7 +16,7 @@ Quick start
 
 2. Incluye el URLconf de calificaciones en el archivo urls.py de tu proyecto::
 
-     url(r'^polls/', include('polls.urls')),url(r'^polls/', include('polls.urls')),
+     url(r'^calificaciones/', include('calificacio.urls')),
 
 3. Ejecuta `python manage.py migrate` para crear los mdoelos de calificaciones.
 
