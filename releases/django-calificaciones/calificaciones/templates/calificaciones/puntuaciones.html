@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Puntuaciones</title>
+</head>
+<body>
+    <h1>Puntuaciones de {{ empresa }}</h1>
+    {% if puntuaciones %}
+        {% for nombre, puntuacion in puntuaciones.items %}
+            <ul>
+                <li>{{ nombre }}: {{ puntuacion }}</li>
+            </ul>
+        {% endfor %}
+    {% else %}
+        <p>No existen puntuaciones para esta empresa.</p>
+    {% endif %}
+
+</body>
+</html>
