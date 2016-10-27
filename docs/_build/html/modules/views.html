@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Views &#8212; Calificar Empresas 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Calificar Empresas 1.0 documentation" href="../index.html" />
+    <link rel="prev" title="Models" href="models.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-IV_Calificar_Empresas.calificaciones.views">
+<span id="views"></span><h1>Views<a class="headerlink" href="#module-IV_Calificar_Empresas.calificaciones.views" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="IV_Calificar_Empresas.calificaciones.views.alumnos_empresa">
+<code class="descclassname">IV_Calificar_Empresas.calificaciones.views.</code><code class="descname">alumnos_empresa</code><span class="sig-paren">(</span><em>request</em>, <em>empresa</em><span class="sig-paren">)</span><a class="headerlink" href="#IV_Calificar_Empresas.calificaciones.views.alumnos_empresa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Elabora un listado de alumnos que han votado una determinada empresa.</p>
+<p>Devuelve una lista de alumnos que han puntuado a la empresa pasada como
+argumento.</p>
+<p>Args:
+request: petición http.
+empresa: nombre de la empresa.</p>
+<p>Returns:
+Devuelve un objeto HttResponse con el html renderizado.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="IV_Calificar_Empresas.calificaciones.views.calificaciones_empresa">
+<code class="descclassname">IV_Calificar_Empresas.calificaciones.views.</code><code class="descname">calificaciones_empresa</code><span class="sig-paren">(</span><em>request</em>, <em>empresa</em><span class="sig-paren">)</span><a class="headerlink" href="#IV_Calificar_Empresas.calificaciones.views.calificaciones_empresa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vista del listado de puntuaciones de una empresa.</p>
+<p>En esta vista se muestra un listado con todas las puntuaciones de una
+determinada empresa.</p>
+<p>Args:
+request: petición http.
+empresa: nombre de la empresa.</p>
+<p>Returns:
+Devuelve un objeto HttResponse con el html renderizado.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="IV_Calificar_Empresas.calificaciones.views.empresa">
+<code class="descclassname">IV_Calificar_Empresas.calificaciones.views.</code><code class="descname">empresa</code><span class="sig-paren">(</span><em>request</em>, <em>empresa</em><span class="sig-paren">)</span><a class="headerlink" href="#IV_Calificar_Empresas.calificaciones.views.empresa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vista con datos de la empresa y enlace a calificaciones.</p>
+<p>En esta vista se muestra información general de la empresa y un enlace
+a la lista de calificaciones.</p>
+<p>Args:
+request: petición http.
+empresa: nombre de la empresa.</p>
+<p>Returns:
+Devuelve un objeto HttResponse con el html renderizado.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="IV_Calificar_Empresas.calificaciones.views.index">
+<code class="descclassname">IV_Calificar_Empresas.calificaciones.views.</code><code class="descname">index</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#IV_Calificar_Empresas.calificaciones.views.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vista de la página principal de la aplicación.</p>
+<p>En esta vista se muestra un listado de las empresas con enlace
+a sus puntuaciones y un enlace al ranking de empresas mejor puntuadas.</p>
+<p>Args:
+request: petición http.</p>
+<p>Returns:
+Return an HttpResponse con el html renderizado.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="IV_Calificar_Empresas.calificaciones.views.ranking">
+<code class="descclassname">IV_Calificar_Empresas.calificaciones.views.</code><code class="descname">ranking</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#IV_Calificar_Empresas.calificaciones.views.ranking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vista del ranking de empresas mejor valoradas.</p>
+<p>Devuelve un listado con las puntuaciones media de cada empresa
+ordenado de mayor a menor.</p>
+<p>Args:
+request: petición http.</p>
+<p>Returns:
+Devuelve un objeto HttpResponse con el html renderizado.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="models.html" title="previous chapter">Models</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/views.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Adrian Alvarez.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/modules/views.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
